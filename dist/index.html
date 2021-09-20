@@ -1,0 +1,3183 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furni</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/bundle.js"></script>
+  </head>
+  <body class="overflow-scroll">
+    <header
+      class="
+        fixed
+        top-0
+        left-0
+        z-50
+        flex
+        items-center
+        justify-between
+        w-full
+        h-20
+        bg-white
+      "
+    >
+      <div
+        class="
+          relative
+          flex flex-row
+          items-center
+          justify-between
+          w-full
+          gap-4
+          px-16
+          py-4
+          mx-auto
+          md:px-32
+          lg:max-w-screen-lg
+        "
+      >
+        <a
+          href="#"
+          class="
+            font-serif
+            text-3xl
+            font-bold
+            text-green-900
+            transition-all
+            hover:opacity-70
+          "
+          >Furni</a
+        >
+        <!-- Navbar--pc -->
+        <nav
+          class="
+            hidden
+            js-nav__pc
+            md:block
+            transform
+            transition
+            duration-200
+            ease-in
+            w-full
+          "
+        >
+          <ul
+            class="
+              flex flex-row
+              items-center
+              justify-center
+              gap-12
+              js-list--pc
+              transform
+              transition
+              delay-300
+              duration-300
+              ease-in
+            "
+          >
+            <li class="transform ease-in transition">
+              <a
+                href="#sec01"
+                class="
+                  p-1
+                  text-xl text-gray-800
+                  transition
+                  hover:opacity-70
+                  transform
+                  ease-in
+                "
+                >Home</a
+              >
+            </li>
+            <li class="transform ease-in transition">
+              <a
+                href="#sec02"
+                class="
+                  p-1
+                  text-xl text-gray-800
+                  transition
+                  hover:opacity-70
+                  transform
+                  ease-in
+                "
+                >Hot Deals</a
+              >
+            </li>
+            <li class="transform ease-in transition">
+              <a
+                href="#sec03"
+                class="
+                  p-1
+                  text-xl text-gray-800
+                  transition
+                  hover:opacity-70
+                  transform
+                  ease-in
+                "
+                >About Us</a
+              >
+            </li>
+            <li class="transform ease-in transition">
+              <a
+                href="#sec04"
+                class="
+                  p-1
+                  text-xl text-gray-800
+                  transition
+                  hover:opacity-70
+                  transform
+                  ease-in
+                "
+                >Products</a
+              >
+            </li>
+            <li class="transform ease-in transition">
+              <a
+                href="#sec05"
+                class="
+                  p-1
+                  text-xl text-gray-800
+                  transition
+                  hover:opacity-70
+                  transform
+                  ease-in
+                "
+                >Voices</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- // Navbar--pc -->
+
+        <!-- Navbar--sp -->
+        <nav
+          class="
+            absolute
+            top-0
+            right-0
+            z-50
+            block
+            w-0
+            p-8
+            duration-500
+            transform
+            translate-x-full
+            bg-white
+            opacity-0
+            js-nav__sp
+          "
+        >
+          <ul
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-0
+              h-screen
+              translate-x-full
+              opacity-0
+              gap-36
+              js-list--sp
+              transforn
+            "
+          >
+            <li class="js-list-item--sp">
+              <a
+                href="#sec01"
+                class="
+                  p-1
+                  text-3xl
+                  font-semibold
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  js-list-link--sp
+                "
+                >Home</a
+              >
+            </li>
+            <li class="js-list-item--sp">
+              <a
+                href="#sec02"
+                class="
+                  p-1
+                  text-3xl
+                  font-semibold
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  js-list-link--sp
+                "
+                >Hot Deals</a
+              >
+            </li>
+            <li class="js-list-item--sp">
+              <a
+                href="#sec03"
+                class="
+                  p-1
+                  text-3xl
+                  font-semibold
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  js-list-link--sp
+                "
+                >About Us</a
+              >
+            </li>
+            <li class="js-list-item--sp">
+              <a
+                href="#sec04"
+                class="
+                  p-1
+                  text-3xl
+                  font-semibold
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  js-list-link--sp
+                "
+                >Products</a
+              >
+            </li>
+            <li class="js-list-item--sp">
+              <a
+                href="#sec05"
+                class="
+                  p-1
+                  text-3xl
+                  font-semibold
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  js-list-link--sp
+                "
+                >Voices</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- // Navbar--sp -->
+
+        <!-- Overlay -->
+        <div
+          class="
+            absolute
+            top-0
+            right-0
+            z-40
+            w-0
+            h-screen
+            transition
+            duration-300
+            ease-in
+            transform
+            translate-x-full
+            bg-black
+            opacity-0
+            cursor-pointer
+            js-overlay
+          "
+        ></div>
+        <!-- // Overlay -->
+
+        <!-- SearchButton -->
+        <div class="search-wrap md:block hidden z-50 relative">
+          <form
+            class="
+              flex flex-row
+              gap-6
+              transition
+              bg-gray-100
+              search-content
+              transform
+              absolute
+              right-0
+              -top-4
+              ease
+              cursor-pointer
+              duration-500
+              h-8
+              w-8
+              rounded-full
+              origin-right
+            "
+          >
+            <input
+              type="text"
+              name="input"
+              class="
+                search-input
+                bg-transparent
+                border-none
+                text-black
+                outline-none
+                w-0
+                overflow-hidden
+                transition
+                transform
+                scale-0
+                ease
+                duration-400
+                placeholder-gray-400
+              "
+              placeholder="Search"
+            />
+            <button type="reset" class="search-btn p-8 absolute -top-4 right-0">
+              <i class="search-icon fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- // SearchButton -->
+
+        <!-- SearchButtonModal -->
+        <div
+          class="
+            w-0
+            h-screen
+            cursor-pointer
+            fixed
+            top-0
+            right-0
+            z-40
+            hidden
+            opacity-0
+            js-modal
+            bg-gray-800
+          "
+        ></div>
+        <!-- // SearchButtonModal -->
+
+        <!-- MenuButton & CloseButton -->
+        <div class="z-50 md:hidden js-btn-wrap">
+          <button type="button" href="" class="text-2xl js-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button type="button" href="" class="hidden text-2xl js-close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <!-- // MenuButton & CloseButton  -->
+      </div>
+    </header>
+
+    <!-- Section01 -->
+    <section id="sec01" class="-mt-20 pt-20 overflow-hidden bg-white">
+      <div
+        class="w-full px-16 mx-auto mb-4 md:px-32 lg:max-w-screen-lg pt-32 pb-4"
+      >
+        <div
+          class="
+            relative
+            flex flex-col
+            items-center
+            justify-between
+            md:flex-row
+            top-wrap
+            md:my-24
+          "
+        >
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-full
+              gap-4
+              p-16
+              bg-gray-100
+              opacity-75
+              md:items-start md:absolute
+              text-wrap
+              md:w-1/2
+            "
+          >
+            <h1
+              class="
+                font-serif
+                text-5xl
+                font-bold
+                leading-tight
+                text-center text-green-900
+                md:text-7xl md:text-left
+                text-bold
+                md:leading-tight
+              "
+            >
+              We Help You Make Modern Interior
+            </h1>
+            <p
+              class="
+                text-xl
+                leading-snug
+                text-center text-gray-500
+                md:text-3xl md:text-left
+              "
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="flex justify-end img-wrap">
+            <img
+              src="../src/img/furni__main_mv.jpg"
+              alt="sofa"
+              class="w-full md:w-4/5"
+            />
+          </div>
+        </div>
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-center
+            relative
+            gap-8
+            p-12
+            overflow-hidden
+            bg-gray-100
+            md:py-12 md:px-40
+            bottom-wrap
+          "
+        >
+          <h2
+            class="text-2xl font-normal tracking-wide text-center text-gray-800"
+          >
+            TRUSTED BY OVER 1K+ COMPANIES
+          </h2>
+          <ul
+            class="
+              flex flex-row flex-wrap
+              items-center
+              justify-center
+              gap-4
+              md:justify-between md:flex-nowrap
+            "
+          >
+            <li class="text-2xl text-gray-400">Microsoft</li>
+            <li class="text-2xl text-gray-400">Entrepreneur</li>
+            <li class="text-2xl text-gray-400">FORTUNE</li>
+            <li class="text-2xl text-gray-400">business+</li>
+            <li class="text-2xl text-gray-400">Mashable</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // Section01 -->
+
+    <!-- Section02 -->
+    <section id="sec02" class="-mt-20 pt-20 overflow-hidden bg-white">
+      <div
+        class="
+          flex flex-col
+          items-start
+          justify-between
+          w-full
+          gap-10
+          px-16
+          pb-4
+          pt-32
+          mx-auto
+          md:px-32 md:flex-row
+          lg:max-w-screen-lg
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            items-center
+            w-full
+            gap-4
+            md:items-start md:w-4/12
+          "
+        >
+          <h1
+            class="
+              font-serif
+              text-5xl
+              font-medium
+              leading-tight
+              text-center text-green-900
+              md:text-left md:text-6xl
+            "
+          >
+            Hot deals for you
+          </h1>
+          <p
+            class="
+              text-xl
+              font-normal
+              leading-relaxed
+              text-center text-gray-500
+              md:text-left md:text-2xl
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            quaerat.
+          </p>
+        </div>
+        <div class="flex-row justify-end w-full md:w-9/12">
+          <ul class="grid items-start justify-start w-full grid-cols-3 gap-4">
+            <li class="flex flex-col items-center gap-5 md:items-start">
+              <div class="icon-wrap">
+                <i class="text-4xl text-gray-800 fas fa-coins"></i>
+              </div>
+              <div class="flex flex-col gap-5 md:items-start txt-wrap">
+                <h3
+                  class="
+                    text-xl
+                    font-semibold
+                    text-center text-gray-800
+                    md:text-left md:text-2xl
+                  "
+                >
+                  1.5% cashback
+                </h3>
+                <p
+                  class="
+                    text-xl
+                    font-normal
+                    leading-relaxed
+                    text-center text-gray-500
+                    md:text-left md:text-2xl
+                  "
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, omnis.
+                </p>
+              </div>
+            </li>
+            <li class="flex flex-col items-center gap-5 md:items-start">
+              <div class="icon-wrap">
+                <i class="text-4xl text-gray-800 fas fa-coins"></i>
+              </div>
+              <div class="flex flex-col gap-5 md:items-start txt-wrap">
+                <h3
+                  class="
+                    text-xl
+                    font-semibold
+                    text-center text-gray-800
+                    md:text-left md:text-2xl
+                  "
+                >
+                  30-day terms
+                </h3>
+                <p
+                  class="
+                    text-xl
+                    font-normal
+                    leading-relaxed
+                    text-center text-gray-500
+                    md:text-left md:text-2xl
+                  "
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, omnis.
+                </p>
+              </div>
+            </li>
+            <li class="flex flex-col items-center gap-5 md:items-start">
+              <div class="icon-wrap">
+                <i class="text-4xl text-gray-800 fas fa-coins"></i>
+              </div>
+              <div class="flex flex-col gap-5 md:items-start txt-wrap">
+                <h3
+                  class="
+                    text-xl
+                    font-semibold
+                    text-center text-gray-800
+                    md:text-left md:text-2xl
+                  "
+                >
+                  Save money
+                </h3>
+                <p
+                  class="
+                    text-xl
+                    font-normal
+                    leading-relaxed
+                    text-center text-gray-500
+                    md:text-left md:text-2xl
+                  "
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, omnis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // Section02 -->
+
+    <!-- Section03 -->
+    <section id="sec03" class="-mt-20 pt-20 overflow-hidden bg-white">
+      <div class="w-full px-16 pb-4 pt-32 mx-auto md:px-32 lg:max-w-screen-lg">
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-between
+            gap-8
+            mb-16
+            top-wrap
+            md:flex-row
+          "
+        >
+          <div class="flex flex-col items-center w-3/5 gap-4 md:items-start">
+            <h1
+              class="
+                font-serif
+                text-5xl
+                font-medium
+                leading-tight
+                text-center text-green-900
+                md:text-left md:text-6xl
+              "
+            >
+              About Us
+            </h1>
+            <p
+              class="
+                text-xl
+                font-normal
+                leading-relaxed
+                text-center text-gray-500
+                md:text-left md:text-2xl
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quaerat.
+            </p>
+          </div>
+          <div class="btn">
+            <button
+              type="button"
+              class="
+                px-10
+                py-4
+                text-xl text-gray-600
+                transition-all
+                ease-in
+                transform
+                bg-gray-200
+                rounded-md
+                shadow-lg
+                hover:opacity-70
+                whitespace-nowrap
+                md:text-2xl
+                hover:scale-95
+              "
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+        <div
+          class="
+            flex flex-col
+            items-start
+            justify-between
+            gap-6
+            md:flex-row
+            bottom-wrap
+          "
+        >
+          <ul class="flex flex-col w-full gap-10 md:grid-cols-2 md:grid">
+            <li
+              class="
+                flex flex-row
+                items-start
+                justify-between
+                gap-8
+                p-8
+                overflow-hidden
+                bg-gray-200
+                md:justify-start md:flex-col
+              "
+            >
+              <div class="flex flex-col items-start w-full gap-2 txt-wrap">
+                <h1 class="text-5xl font-semibold text-green-900 md:text-6xl">
+                  1.
+                </h1>
+                <h2 class="text-2xl font-semibold text-green-900 md:text-3xl">
+                  Who We Are
+                </h2>
+                <p class="text-xl font-normal text-gray-500 md:text-2xl">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="w-full img-wrap">
+                <img
+                  src="../src/img/furni_about_img_01.jpg"
+                  alt="visual"
+                  class="object-contain w-full h-64"
+                />
+              </div>
+            </li>
+            <li
+              class="
+                flex flex-row
+                items-start
+                justify-between
+                gap-8
+                p-8
+                overflow-hidden
+                bg-gray-200
+                md:justify-start md:flex-col
+              "
+            >
+              <div class="flex flex-col items-start w-full gap-2 txt-wrap">
+                <h1 class="text-5xl font-semibold text-green-900 md:text-6xl">
+                  2.
+                </h1>
+                <h2 class="text-2xl font-semibold text-green-900 md:text-3xl">
+                  What Do We Do
+                </h2>
+                <p class="text-xl font-normal text-gray-500 md:text-2xl">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="w-full img-wrap">
+                <img
+                  src="../src/img/furni_about_img_02.jpg"
+                  alt="visual"
+                  class="object-contain w-full h-64"
+                />
+              </div>
+            </li>
+            <li
+              class="
+                flex flex-row
+                items-start
+                justify-between
+                gap-8
+                p-8
+                overflow-hidden
+                bg-gray-200
+                md:justify-start md:flex-col
+              "
+            >
+              <div class="flex flex-col items-start w-full gap-2 txt-wrap">
+                <h1 class="text-5xl font-semibold text-green-900 md:text-6xl">
+                  3.
+                </h1>
+                <h2 class="text-2xl font-semibold text-green-900 md:text-3xl">
+                  How Do We Help
+                </h2>
+                <p class="text-xl font-normal text-gray-500 md:text-2xl">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="w-full img-wrap">
+                <img
+                  src="../src/img/furni_about_img_03.jpg"
+                  alt="visual"
+                  class="object-contain w-full h-64"
+                />
+              </div>
+            </li>
+            <li
+              class="
+                flex flex-row
+                items-start
+                justify-between
+                gap-8
+                p-8
+                overflow-hidden
+                bg-gray-200
+                md:justify-start md:flex-col
+              "
+            >
+              <div class="flex flex-col items-start w-full gap-2 txt-wrap">
+                <h1 class="text-5xl font-semibold text-green-900 md:text-6xl">
+                  4.
+                </h1>
+                <h2 class="text-2xl font-semibold text-green-900 md:text-3xl">
+                  Create success story
+                </h2>
+                <p class="text-xl font-normal text-gray-500 md:text-2xl">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="w-full img-wrap">
+                <img
+                  src="../src/img/furni_about_img_04.jpg"
+                  alt="visual"
+                  class="object-contain w-full h-64"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // Section03 -->
+
+    <!-- Section4 -->
+    <section id="sec04" class="-mt-20 pt-20 overflow-hidden bg-white">
+      <div class="w-full px-16 pb-4 pt-32 mx-auto md:px-32 lg:max-w-screen-lg">
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-between
+            gap-8
+            mb-12
+            md:flex-row
+            top-wrap
+          "
+        >
+          <div class="">
+            <h1
+              class="
+                font-serif
+                text-5xl
+                font-medium
+                leading-tight
+                text-center text-green-900
+                md:text-left md:text-6xl
+              "
+            >
+              Products
+            </h1>
+          </div>
+          <div class="btn">
+            <button
+              type="button"
+              class="
+                px-10
+                py-4
+                text-xl text-gray-600
+                transition-all
+                ease-in
+                transform
+                bg-gray-200
+                rounded-md
+                shadow-lg
+                hover:opacity-70
+                whitespace-nowrap
+                md:text-2xl
+                hover:scale-95
+              "
+            >
+              See All
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-16 bottom-wrap"
+        >
+          <!-- Tab -->
+          <ul
+            class="flex flex-row items-center justify-center gap-8 js-tab-list"
+          >
+            <li
+              class="
+                text-xl
+                font-semibold
+                text-gray-300
+                transition-all
+                ease-in
+                js-tab-list-item
+                hover:opacity-70
+                md:text-2xl
+                is-active
+                cursor-pointer
+                p-2
+              "
+            >
+              <a href="#all" class="js-tab-list-item--link">All</a>
+            </li>
+            <li
+              class="
+                text-xl
+                font-semibold
+                text-gray-300
+                transition-all
+                ease-in
+                js-tab-list-item
+                hover:opacity-70
+                md:text-2xl
+                cursor-pointer
+                p-2 
+              "
+            >
+              <a href="#bed" class="js-tab-list-item--link">Bed</a>
+            </li>
+            <li
+              class="
+                text-xl
+                font-semibold
+                text-gray-300
+                transition-all
+                ease-in
+                js-tab-list-item
+                hover:opacity-70
+                md:text-2xl
+                cursor-pointer
+                p-2 
+              "
+            >
+              <a href="#sofa" class=" js-tab-list-item--link">Sofa</a>
+            </li>
+            <li
+              class="
+                text-xl
+                font-semibold
+                text-gray-300
+                transition-all
+                ease-in
+                js-tab-list-item
+                hover:opacity-70
+                md:text-2xl
+                cursor-pointer
+                p-2
+              "
+            >
+              <a href="#chair" class="js-tab-list-item--link">Chair</a>
+            </li>
+            <li
+              class="
+                text-xl
+                font-semibold
+                text-gray-300
+                transition-all
+                ease-in
+                js-tab-list-item
+                hover:opacity-70
+                md:text-2xl
+                cursor-pointer
+                p-2 
+              "
+            >
+              <a href="#light" class="js-tab-list-item--link">Light</a>
+            </li>
+          </ul>
+          <!-- // Tab -->
+
+          <!-- TabContent -->
+          <!-- TabContent--List--All -->
+          <div class="tab-content is-show -mt-20 pt-20" id="all">
+            <ul
+              class="
+                grid
+                w-full
+                grid-cols-2
+                gap-8
+                md:grid-cols-3
+                js-list--all
+                pt-32
+              "
+            >
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_05.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Vintage Chair
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $65.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $96.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_02.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Lamp Tool
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $45.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_06.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Stylish Chair
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $45.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $65.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_03.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Vintage Chair
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $65.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $96.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_02.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Stacked Chair
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $87.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $97.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_04.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- // TabContent--List--All-->
+
+          <!-- TabContent--List--Bed -->
+          <div class="tab-content -mt-20 pt-20" id="bed">
+            <ul
+              class="
+                grid
+                w-full
+                grid-cols-2
+                gap-8
+                md:grid-cols-3
+                js-list--bed
+                pt-32
+              "
+            >
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_07.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_08.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- // TabContent--List--Bed -->
+
+          <!-- TabContent--List--Sofa -->
+          <div class="tab-content -mt-20 pt-20" id="sofa">
+            <ul
+              class="
+                grid
+                w-full
+                grid-cols-2
+                gap-8
+                md:grid-cols-3
+                js-list--sofa
+                pt-32
+              "
+            >
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_09.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_10.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_11.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- // TabContent--List--Sofa -->
+
+          <!-- TabContent--List--Chair -->
+          <div class="tab-content -mt-20 pt-20" id="chair">
+            <ul
+              class="
+                grid
+                w-full
+                grid-cols-2
+                gap-8
+                md:grid-cols-3
+                js-list--chair
+                pt-32
+              "
+            >
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_01.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_02.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_03.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_04.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- // TabContent--List--Chair -->
+
+          <!-- TabContent--List--Light -->
+          <div class="tab-content -mt-20 pt-20" id="light">
+            <ul
+              class="
+                grid
+                w-full
+                grid-cols-2
+                gap-8
+                md:grid-cols-3
+                js-list--light
+                pt-32
+              "
+            >
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_05.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_06.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_12.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="p-8 overflow-hidden bg-gray-200">
+                <a
+                  href=""
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-between
+                    h-full
+                    gap-10
+                    transition
+                    ease-in
+                    wrap
+                    hover:opacity-70
+                  "
+                >
+                  <div class="flex flex-col items-start gap-4 txt-wrap">
+                    <h2 class="text-2xl font-normal text-gray-700 md:text-3xl">
+                      Hand Base Lamp
+                    </h2>
+                    <div class="flex flex-row items-center justify-start gap-6">
+                      <p class="text-xl font-normal text-gray-600 md:text-2xl">
+                        $35.00
+                      </p>
+                      <p
+                        class="
+                          text-lg
+                          font-normal
+                          text-gray-400
+                          line-through
+                          md:text-xl
+                        "
+                      >
+                        $66.00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center w-full img-wrap">
+                    <img
+                      src="../src/img/furni_products_img_13.jpg"
+                      alt="visual"
+                      class="object-cover w-full max-w-64 max-h-64"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- // TabContent--List--Light -->
+          <!-- // TabContent -->
+        </div>
+      </div>
+    </section>
+    <!-- // Section04 -->
+
+    <!-- Section05 -->
+    <section id="sec05" class="-mt-20 pt-20 overflow-hidden">
+      <div
+        class="
+          relative
+          w-full
+          gap-10
+          pt-32
+          px-16
+          mx-auto
+          overflow-hidden
+          lg:max-w-screen-lg
+          md:px-32
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            w-full
+            gap-16
+            px-16
+            py-16
+            bg-gray-200
+            inner
+            md:px-32
+          "
+        >
+          <div
+            class="
+              relative
+              flex flex-col
+              items-center
+              justify-center
+              w-1/2
+              gap-4
+              mx-auto
+              txt-wrap
+            "
+          >
+            <h1
+              class="
+                font-serif
+                text-6xl
+                font-medium
+                leading-tight
+                text-center text-green-900
+                md:text-7xl
+              "
+            >
+              What our happy client say
+            </h1>
+            <p
+              class="
+                text-xl
+                font-normal
+                leading-relaxed
+                text-center text-gray-500
+                md:text-2xl
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quaerat.
+            </p>
+          </div>
+          <div class="w-full overflow-hidden bottom-wrap">
+            <div class="pb-20 swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-center
+                    gap-8
+                    p-8
+                    bg-gray-300
+                    md:flex-row
+                    swiper-slide
+                  "
+                >
+                  <div class="w-full md:w-1/2 img-wrap">
+                    <img
+                      src="../src/img/furni_client_img_01.jpg"
+                      alt="visual"
+                      class="object-cover object-top h-80 w-80"
+                    />
+                  </div>
+                  <div
+                    class="
+                      flex flex-col
+                      items-start
+                      justify-start
+                      w-full
+                      gap-12
+                      md:w-1/2
+                      txt-wrap
+                      md:h-80
+                    "
+                  >
+                    <div class="flex flex-col items-start gap-4 wrap">
+                      <h3
+                        class="text-2xl font-normal text-green-900 md:text-3xl"
+                      >
+                        Furni
+                      </h3>
+                      <p
+                        class="
+                          text-xl
+                          italic
+                          font-normal
+                          leading-loose
+                          text-gray-500
+                          md:text-2xl
+                        "
+                      >
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At, officia explicabo fugiat vitae amet corporis?"
+                      </p>
+                    </div>
+                    <div class="flex flex-col items-start gap-2 wrap">
+                      <h4 class="text-xl font-normal text-gray-800 md:text-2xl">
+                        Larry Diamond
+                      </h4>
+                      <p class="text-base font-normal text-gray-400 md:text-lg">
+                        Chief Exective Officer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-center
+                    gap-8
+                    p-8
+                    bg-gray-300
+                    md:flex-row
+                    swiper-slide
+                  "
+                >
+                  <div class="w-full md:w-1/2 img-wrap">
+                    <img
+                      src="../src/img/furni_client_img_02.jpg"
+                      alt="visual"
+                      class="object-cover object-top h-80 w-80"
+                    />
+                  </div>
+                  <div
+                    class="
+                      flex flex-col
+                      items-start
+                      justify-start
+                      w-full
+                      gap-12
+                      md:w-1/2
+                      txt-wrap
+                      md:h-80
+                    "
+                  >
+                    <div class="flex flex-col items-start gap-4 wrap">
+                      <h3
+                        class="text-2xl font-normal text-green-900 md:text-3xl"
+                      >
+                        Furni
+                      </h3>
+                      <p
+                        class="
+                          text-xl
+                          italic
+                          font-normal
+                          leading-loose
+                          text-gray-500
+                          md:text-2xl
+                        "
+                      >
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At, officia explicabo fugiat vitae amet corporis?"
+                      </p>
+                    </div>
+                    <div class="flex flex-col items-start gap-2 wrap">
+                      <h4 class="text-xl font-normal text-gray-800 md:text-2xl">
+                        Jony Mac
+                      </h4>
+                      <p class="text-base font-normal text-gray-400 md:text-lg">
+                        Chief Design Officer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-start
+                    justify-center
+                    gap-8
+                    p-8
+                    bg-gray-300
+                    md:flex-row
+                    swiper-slide
+                  "
+                >
+                  <div class="w-full md:w-1/2 img-wrap">
+                    <img
+                      src="../src/img/furni_client_img_03.jpg"
+                      alt="visual"
+                      class="object-cover object-top h-80 w-80"
+                    />
+                  </div>
+                  <div
+                    class="
+                      flex flex-col
+                      items-start
+                      justify-start
+                      w-full
+                      gap-12
+                      md:w-1/2
+                      txt-wrap
+                      md:h-80
+                    "
+                  >
+                    <div class="flex flex-col items-start gap-4 wrap">
+                      <h3
+                        class="text-2xl font-normal text-green-900 md:text-3xl"
+                      >
+                        Furni
+                      </h3>
+                      <p
+                        class="
+                          text-xl
+                          italic
+                          font-normal
+                          leading-loose
+                          text-gray-500
+                          md:text-2xl
+                        "
+                      >
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At, officia explicabo fugiat vitae amet corporis?"
+                      </p>
+                    </div>
+                    <div class="flex flex-col items-start gap-2 wrap">
+                      <h4 class="text-xl font-normal text-gray-800 md:text-2xl">
+                        Michael Born
+                      </h4>
+                      <p class="text-base font-normal text-gray-400 md:text-lg">
+                        Chief Technology Officer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  w-2
+                  h-2
+                  text-black
+                  transition-all
+                  ease-in
+                  swiper-button-prev
+                  hover:opacity-70
+                "
+              ></div>
+              <div
+                class="
+                  w-2
+                  h-2
+                  text-black
+                  transition-all
+                  ease-in
+                  swiper-button-next
+                  hover:opacity-70
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Section05 -->
+
+    <!-- Footer -->
+    <footer
+      class="
+        flex
+        items-center
+        justify-between
+        w-full
+        h-full
+        px-16
+        mt-32
+        overflow-hidden
+        bg-green-900
+        md:px-32
+        py-36
+      "
+    >
+      <div
+        class="
+          flex flex-col
+          items-center
+          justify-between
+          w-full
+          gap-16
+          mx-auto
+          lg:max-w-screen-lg
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            items-start
+            justify-start
+            w-full
+            gap-8
+            pb-16
+            border-b-2 border-gray-200
+            md:justify-between md:items-center md:flex-row
+            border-opacity-20
+            top-wrap
+          "
+        >
+          <div class="w-1/2 txt-wrap">
+            <h1
+              class="
+                text-5xl
+                font-normal
+                text-white
+                md:leading-normal md:text-6xl
+              "
+            >
+              Start your business today for $0+ state fees.
+            </h1>
+          </div>
+          <div
+            class="
+              flex flex-row
+              items-start
+              justify-start
+              w-1/2
+              gap-4
+              md:justify-end md:items-center
+              btn-wrap
+            "
+          >
+            <button
+              type="button"
+              class="
+                px-10
+                py-4
+                text-xl text-green-900
+                transition-all
+                ease-in
+                bg-white
+                shadow-lg
+                rounded-3xl
+                hover:opacity-70
+                whitespace-nowrap
+                md:text-2xl
+              "
+            >
+              Get Started
+            </button>
+            <button
+              type="button"
+              class="
+                px-10
+                py-4
+                text-xl text-white
+                transition-all
+                ease-in
+                bg-green-800
+                shadow-lg
+                rounded-3xl
+                hover:opacity-70
+                whitespace-nowrap
+                md:text-2xl
+              "
+            >
+              Contact Sales
+            </button>
+          </div>
+        </div>
+        <div
+          class="
+            flex flex-col
+            items-start
+            justify-between
+            w-full
+            md:gap-10 md:flex-row
+            bottom-wrap
+          "
+        >
+          <div
+            class="flex flex-col items-start w-1/2 gap-5 mb-12 md:w-1/4 md:mb-0"
+          >
+            <div class="flex flex-col items-start gap-5 txt-wrap">
+              <a
+                href="#"
+                class="
+                  font-serif
+                  text-3xl
+                  font-semibold
+                  text-white
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                "
+                >Furni</a
+              >
+              <p
+                class="
+                  text-xl
+                  font-normal
+                  text-gray-200
+                  md:text-2xl md:leading-normal
+                "
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
+                esse!
+              </p>
+            </div>
+            <div
+              class="flex flex-row items-center justify-start gap-5 sns-wrap"
+            >
+              <a
+                href=""
+                class="
+                  p-1
+                  text-xl
+                  font-normal
+                  text-white
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  md:text-2xl
+                "
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href=""
+                class="
+                  p-1
+                  text-xl
+                  font-normal
+                  text-white
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  md:text-2xl
+                "
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href=""
+                class="
+                  p-1
+                  text-xl
+                  font-normal
+                  text-white
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  md:text-2xl
+                "
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href=""
+                class="
+                  p-1
+                  text-xl
+                  font-normal
+                  text-white
+                  transition-all
+                  ease-in
+                  hover:opacity-70
+                  md:text-2xl
+                "
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="
+              flex flex-row
+              items-start
+              justify-between
+              w-full
+              gap-16
+              md:w-4/5 md:justify-end
+              dropdown-list-group
+            "
+          >
+            <div
+              class="
+                flex flex-row
+                items-center
+                w-full
+                md:w-1/2
+                dropdown-list-group-inner
+              "
+            >
+              <input
+                type="checkbox"
+                class="hidden dropdown-list-flag dropdown-list-flag--01"
+                id="list-flag--01"
+              />
+              <div
+                class="
+                  flex flex-col
+                  items-start
+                  w-full
+                  transition
+                  ease-in
+                  border
+                  border-b-0
+                  border-l-0
+                  border-r-0
+                  border-white
+                  border-t-1
+                  md:border-t-0
+                  dropdown-list-wrap
+                "
+              >
+                <label
+                  for="list-flag--01"
+                  class="
+                    flex flex-row
+                    items-center
+                    justify-between
+                    w-full
+                    p-4
+                    text-white
+                    transition
+                    ease-in
+                    cursor-pointer
+                    dropdown-label
+                    hover:opacity-70
+                    tranisition
+                  "
+                >
+                  <h3
+                    class="
+                      text-xl
+                      font-normal
+                      text-white
+                      md:text-2xl
+                      dropdown-list-title
+                    "
+                  >
+                    Entry Types
+                  </h3>
+                  <a href="" class="dropdown-list-icon-wrap md:hidden">
+                    <span class="">
+                      <i
+                        class="
+                          transition
+                          ease-in
+                          fas
+                          fa-plus
+                          dropdown-list-icon
+                        "
+                      ></i>
+                    </span>
+                  </a>
+                </label>
+                <ul
+                  class="
+                    flex flex-col
+                    items-start
+                    w-full
+                    gap-3
+                    p-4
+                    transition
+                    ease-in
+                    dropdown-list
+                  "
+                >
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Knowledge base</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Security</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Partners</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >About us</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >FAQs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-row
+              items-start
+              justify-between
+              w-full
+              gap-16
+              md:w-4/5 md:justify-end
+              dropdown-list-group
+            "
+          >
+            <div
+              class="
+                flex flex-row
+                items-center
+                w-full
+                md:w-1/2
+                dropdown-list-group-inner
+              "
+            >
+              <input
+                type="checkbox"
+                class="hidden dropdown-list-flag dropdown-list-flag--02"
+                id="list-flag--02"
+              />
+              <div
+                class="
+                  flex flex-col
+                  items-start
+                  w-full
+                  transition
+                  ease-in
+                  border
+                  border-b-0
+                  border-l-0
+                  border-r-0
+                  border-white
+                  border-t-1
+                  md:border-t-0
+                  dropdown-list-wrap
+                "
+              >
+                <label
+                  for="list-flag--02"
+                  class="
+                    flex flex-row
+                    items-center
+                    justify-between
+                    w-full
+                    p-4
+                    text-white
+                    transition
+                    ease-in
+                    cursor-pointer
+                    dropdown-label
+                    hover:opacity-70
+                    tranisition
+                  "
+                >
+                  <h3
+                    class="
+                      text-xl
+                      font-normal
+                      text-white
+                      md:text-2xl
+                      dropdown-list-title
+                    "
+                  >
+                    Services
+                  </h3>
+                  <a href="" class="dropdown-list-icon-wrap md:hidden">
+                    <span class="">
+                      <i
+                        class="
+                          transition
+                          ease-in
+                          fas
+                          fa-plus
+                          dropdown-list-icon
+                        "
+                      ></i>
+                    </span>
+                  </a>
+                </label>
+                <ul
+                  class="
+                    flex flex-col
+                    items-start
+                    w-full
+                    gap-3
+                    p-4
+                    transition
+                    ease-in
+                    dropdown-list
+                  "
+                >
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Press</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Payrool</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Library</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Help Center</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-row
+              items-start
+              justify-between
+              w-full
+              gap-16
+              md:w-4/5 md:justify-end
+              dropdown-list-group
+            "
+          >
+            <div
+              class="
+                flex flex-row
+                items-center
+                w-full
+                md:w-1/2
+                dropdown-list-group-inner
+              "
+            >
+              <input
+                type="checkbox"
+                class="hidden dropdown-list-flag dropdown-list-flag--03"
+                id="list-flag--03"
+              />
+              <div
+                class="
+                  flex flex-col
+                  items-start
+                  w-full
+                  transition
+                  ease-in
+                  border
+                  border-b-0
+                  border-l-0
+                  border-r-0
+                  border-white
+                  border-t-1
+                  md:border-t-0
+                  dropdown-list-wrap
+                "
+              >
+                <label
+                  for="list-flag--03"
+                  class="
+                    flex flex-row
+                    items-center
+                    justify-between
+                    w-full
+                    p-4
+                    text-white
+                    transition
+                    ease-in
+                    cursor-pointer
+                    dropdown-label
+                    hover:opacity-70
+                    tranisition
+                  "
+                >
+                  <h3
+                    class="
+                      text-xl
+                      font-normal
+                      text-white
+                      md:text-2xl
+                      dropdown-list-title
+                    "
+                  >
+                    Resources
+                  </h3>
+                  <a href="" class="dropdown-list-icon-wrap md:hidden">
+                    <span class="">
+                      <i
+                        class="
+                          transition
+                          ease-in
+                          fas
+                          fa-plus
+                          dropdown-list-icon
+                        "
+                      ></i>
+                    </span>
+                  </a>
+                </label>
+                <ul
+                  class="
+                    flex flex-col
+                    items-start
+                    w-full
+                    gap-3
+                    p-4
+                    transition
+                    ease-in
+                    dropdown-list
+                  "
+                >
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Contact Support</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Teams</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-row
+              items-start
+              justify-between
+              w-full
+              gap-16
+              md:w-4/5 md:justify-end
+              dropdown-list-group
+            "
+          >
+            <div
+              class="
+                flex flex-row
+                items-center
+                w-full
+                md:w-1/2
+                dropdown-list-group-inner
+              "
+            >
+              <input
+                type="checkbox"
+                class="hidden dropdown-list-flag dropdown-list-flag--04"
+                id="list-flag--04"
+              />
+              <div
+                class="
+                  flex flex-col
+                  items-start
+                  w-full
+                  transition
+                  ease-in
+                  border
+                  border-l-0
+                  border-r-0
+                  border-white
+                  border-b-1
+                  border-t-1
+                  md:border-t-0
+                  dropdown-list-wrap
+                  md:border-b-0
+                "
+              >
+                <label
+                  for="list-flag--04"
+                  class="
+                    flex flex-row
+                    items-center
+                    justify-between
+                    w-full
+                    p-4
+                    text-white
+                    transition
+                    ease-in
+                    cursor-pointer
+                    dropdown-label
+                    hover:opacity-70
+                    tranisition
+                  "
+                >
+                  <h3
+                    class="
+                      text-xl
+                      font-normal
+                      text-white
+                      md:text-2xl
+                      dropdown-list-title
+                    "
+                  >
+                    Support
+                  </h3>
+                  <a href="" class="dropdown-list-icon-wrap md:hidden">
+                    <span class="">
+                      <i
+                        class="
+                          transition
+                          ease-in
+                          fas
+                          fa-plus
+                          dropdown-list-icon
+                        "
+                      ></i>
+                    </span>
+                  </a>
+                </label>
+                <ul
+                  class="
+                    flex flex-col
+                    items-start
+                    w-full
+                    gap-3
+                    p-4
+                    transition
+                    ease-in
+                    dropdown-list
+                  "
+                >
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Affiliates</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Sitemap</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Cancelation Policy</a
+                    >
+                  </li>
+                  <li class="w-full dropdown-list--item">
+                    <a
+                      href=""
+                      class="
+                        w-full
+                        text-lg
+                        font-normal
+                        text-gray-300
+                        transition-all
+                        ease-in
+                        hover:text-white hover:underline
+                        md:text-xl
+                        dropdown-list--link
+                      "
+                      >Pricing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
