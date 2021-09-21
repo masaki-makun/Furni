@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//ResetCss
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Swiper */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 10px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 96%;
+  z-index: 40;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 45%;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 45%;
+}
+
+/* Section04 */
+#sec04 .js-tab-list-item.is-active {
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+#sec04 .tab-content {
+  display: none;
+}
+#sec04 .tab-content.is-show {
+  display: block;
+}
+
+/* Tab */
+.tab-group {
+  display: flex;
+  justify-content: center;
+}
+.tab {
+  flex-grow: 1;
+  padding: 5px;
+  list-style: none;
+  border: solid 1px #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+.panel-group {
+  height: 100px;
+  border: solid 1px #ccc;
+  border-top: none;
+  background: #eee;
+}
+.panel {
+  display: none;
+}
+.tab.is-active {
+  background: #f00;
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
+.panel.is-show {
+  display: block;
+}
+
+/* Search */
+.search-content {
+  /* transform-origin: 100% 50%; */
+}
+
+.search-content.focused {
+  width: 200px;
+}
+
+.search-input {
+  transform-origin: 0 50%;
+  padding: 1rem 2rem;
+}
+
+.search-content.focused .search-input {
+  padding: 0 20px 0 10px;
+  width: 100%;
+  transform: scale(1);
+}
+
+.search-icon {
+  position: absolute;
+  color: #000;
+  font-size: 8px;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+
+/* Footer */
+.dropdown-list-flag:checked ~ .dropdown-list-wrap .dropdown-list {
+  display: flex;
+  height: auto;
+}
+.dropdown-list-flag:checked ~ .dropdown-list-wrap .dropdown-list-icon {
+  transform: rotate(45deg);
+}
+
+/* メディアクエリ(768px以上) */
+@media (max-width: 768px) {
+  .dropdown-list {
+    display: none;
+    height: 0;
+  }
+}
